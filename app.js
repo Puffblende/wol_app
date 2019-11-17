@@ -21,7 +21,7 @@ app.get('/wol/wakeup', (req, res) => {
     }
   });
 
-    console.log("command recieved");
+    console.log("command recieved with parameters: " + req.params);
     res.send('Hello world\n');
   }
 
