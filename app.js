@@ -24,6 +24,10 @@ app.get('/wol/wakeup', (req, res) => {
     console.log("command recieved with parameters: " + req.params);
     res.send('Hello world\n');
   }
+  else {
+    console.log("Falsches Passwort !");
+    res.send("Authentication failed");
+  }
 
 });
 
